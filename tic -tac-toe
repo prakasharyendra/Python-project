@@ -1,10 +1,14 @@
 theboard={'t1':' ','t2':' ','t3':' ','m1':' ','m2':' ','m3':' ','b1':' ','b2':' ','b3':' '}
 def tictac(board):
+
     print(board['t1'] + '|' + board['t2'] + '|' + board['t3'])
     print('-'*6)
     print(board['m1'] + '|' + board['m2'] + '|' + board['m3'])
     print('-'*6)
     print(board['b1'] + '|' + board['b2'] + '|' + board['b3']) 
+    if(t1==t2 && t2==t3 && t3==t1):
+        print("Win")
+
 turn='X'
 for i in range(0,9):
     tictac(theboard)
