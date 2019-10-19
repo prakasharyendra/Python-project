@@ -1,0 +1,24 @@
+import random
+print("player 1 wants to roll or quit")
+p1=input("enter roll or quit")
+if(p1=="roll"):
+        print("player 1 roll the dice")
+        value1=random.randint(1,6)
+        print("Player 1:"+ str(value1))
+else:
+        print('player2 wins')
+print("player 2 wants to roll or quit")
+p2=input("enter the roll or quit")
+if(p2=="roll"):
+        print("player2 roll the dice")
+        value2=random.randint(1,6)
+        print("player 2:"+ str(value2))
+else:
+        print("player 1 wins")
+if(value1>value2):
+          print("player 1 is a winner")
+elif(value2>value1):
+          print("player 2 is a winner")
+else:
+          print("it is a tie")
+          
