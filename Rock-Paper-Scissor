@@ -1,0 +1,20 @@
+import random
+l1=['scissor','rock','paper']
+value=input('enter either rock,paper or scissor')
+r=random.choice(l1)
+print(r)
+if(value=='scissor' and r=='rock'):
+    print("rock breaks the scissor:lose")
+elif(value=='scissor' and r=='paper'):
+    print('scissor cuts the paper:win')
+elif(value=='rock' and r=='paper'):
+    print('paper covers the rock:lose')
+elif(value=='rock' and r=='scissor'):
+    print('rock breaks the scissor:win')
+elif(value=='paper' and r=='rock'):
+    print("paper covers the rock:win")
+elif(value=='paper' and r=='scissor'):
+    print('scissor cuts the paper:lose')
+else:
+    print("it is a tie")
+    
